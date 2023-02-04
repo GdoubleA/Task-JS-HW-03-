@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Press Start 2P', serif;
+    font-size: 28px;
+    color:rgb(228, 223, 223);
+    list-style:none;
+
+  }
+  
+  body {
+    background-color:#413f5de0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-height: 80vh;
+    
+  }
+
+  a {
+    justify-content: center;
+    width: 500px;
+    display:flex;
+    padding: 35px;
+    margin-top: 30px;
+    border:outset 5px gray;
+    background-color:rgba(35, 35, 95, 0.655); 
+    text-shadow: 0 0px 10px rgb(230, 203, 230);
+  }
+
+  a:hover {
+    color: yellow;
+    border-left: solid 10px #DEFB31;
+    border-right: solid 10px #DEFB31;
+    text-shadow: 0 0 10px #DEFB31;
+    background-color:rgba(0, 0, 0, 0.305);
+    animation: myAnim 2s ease 0s infinite normal forwards;
+  }
+  @keyframes myAnim {
+    0% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(1.1);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
+
+  .Lcoin {
+    position: absolute;
+    left: 10%;
+    animation: myAnimL 7s linear 0s infinite reverse forwards;
+  }
+  .Rcoin {
+    position: absolute;
+    right: 10%;
+    animation: myAnimR 7s linear 0s infinite normal forwards;
+  }
+  @keyframes myAnimL {
+    0% {
+      transform: rotate(0);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes myAnimR {
+    0% {
+      transform: rotate(0);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+
+
+
+
+

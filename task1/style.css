@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', serif;
+    font-size: 28px;
+
+  }
+  
+  body {
+    background-color: rgb(67, 119, 106);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-height: 80vh;
+  }
+
+  .container {
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  p {
+    text-align: center;
+    align-items: center;
+  }
+
+  .F12 {
+    border-style: outset ;
+    border-color: gray rgba(245, 245, 245, 0.589);
+    padding: 10px;
+    border-width: 5px;
+    background-color: darkgray;
+  }
+
+  .F12:hover {
+    cursor: pointer;
+  }
+
+  .image {
+    animation: myAnim 4s ease 0s infinite normal forwards;
+    text-align: center;
+
+  }
+
+
+  .back {
+    font-size: 23px;
+    position: absolute;
+    left: 1%;
+    top: 1%;
+    padding: 10px;
+    border: solid;
+    background-color: darkgray;
+  }
+  .back:hover {
+    background-color: rgb(206, 205, 205);
+    cursor: pointer;
+  }
+
+  @keyframes myAnim {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70% {
+		transform: translateY(-8px);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: translateY(8px);
+	}
+
+	80% {
+		transform: translateY(6.4px);
+	}
+
+	90% {
+		transform: translateY(-6.4px);
+	}
+}

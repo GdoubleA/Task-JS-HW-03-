@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Press Start 2P', serif;
+  font-size: 23px;
+}
+
+body {
+  background-color: rgb(116, 119, 67);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  min-height: 80vh;
+}
+
+.code {
+  position: absolute;
+  left: 5%;
+}
+
+p {
+  padding: 10px;
+}
+
+code {
+  display: flex;
+  background-color: grey;
+  padding: 10px 30px;
+  border: inset  gray;
+}
+
+.back {
+  font-size: 23px;
+  position: absolute;
+  left: 1%;
+  top: 1%;
+  padding: 10px;
+  border: solid;
+  background-color: grey;
+}
+.back:hover {
+  background-color: rgb(183, 181, 181);
+  cursor: pointer;
+}
