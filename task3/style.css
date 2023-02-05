@@ -132,11 +132,11 @@ body {
 }
 
 
-#trafficLight, #trafficLight2, #trafficLight3 {
+#lightRed, #lightGreen, #lightYellow {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #0000004d;
   display: flex;
   border: solid;
   border-top-width: 10px;

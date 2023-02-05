@@ -23,58 +23,63 @@ function changeLight() {
 
 // Click TrafficLight
 
-const trafficLightEl = document.querySelector('#trafficLight');
-const trafficLightE2 = document.querySelector('#trafficLight2');
-const trafficLightE3 = document.querySelector('#trafficLight3');
+const trafLightRed = document.querySelector('#lightRed');
+const trafLightYellow = document.querySelector('#lightYellow');
+const trafLightGreen = document.querySelector('#lightGreen');
 
 
-function makeGreen() {
-    trafficLightEl.style.background = ('green');
-    trafficLightEl.removeEventListener('click', makeGreen);
-    trafficLightEl.addEventListener('click', makeYellow);
-    trafficLightEl.addEventListener('click', () => {
-        trafficLightEl.style.background = ('');
-        trafficLightEl.addEventListener('click', () => {
-            trafficLightE3.style.background = ('red');
-            trafficLightE2.style.background = ('')
-        })   
-    })
-}
-
-function makeYellow() {
-    trafficLightE2.style.background = ('yellow');
-    trafficLightE2.removeEventListener('click', makeYellow);
-    trafficLightE2.addEventListener('click', makeRed);
-    trafficLightE2.addEventListener('click', () => {
-        trafficLightE2.style.background = ('');
-        trafficLightE2.addEventListener('click', () => {
-            trafficLightEl.style.background = ('green');
-            trafficLightE3.style.background = ('');
-            
-        })
-    })
-}
-
+trafLightRed.addEventListener('click', makeRed);
 function makeRed() {
-    trafficLightE3.style.background = ('red');
-    trafficLightE3.removeEventListener('click', makeRed);
-    trafficLightE3.addEventListener('click', makeGreen);
-    trafficLightE3.addEventListener('click', () => {
-        trafficLightE3.style.background = ('');
-        trafficLightE3.addEventListener('click', () => {
-            trafficLightE2.style.background = ('yellow');
-            trafficLightEl.style.background = ('');
-        })
-    })
+    trafLightRed.style.background = ('red');
+    trafLightYellow.style.background = ('#0000004d');
+    trafLightGreen.style.background = ('#0000004d');
+
+    // Listener remove
+    trafLightRed.removeEventListener('click', makeRed);
+    trafLightYellow.removeEventListener('click', makeRed);
+    trafLightGreen.removeEventListener('click', makeRed);
+
+    // Listener set
+    trafLightRed.addEventListener('click', makeYellow);
+    trafLightYellow.addEventListener('click', makeYellow);
+    trafLightGreen.addEventListener('click', makeYellow);   
 }
 
-    trafficLightEl.addEventListener('click', makeGreen);
-    trafficLightE2.addEventListener('click', makeYellow);
-    trafficLightE3.addEventListener('click', makeRed);
+trafLightYellow.addEventListener('click', makeYellow);
+function makeYellow() {
+   
+    trafLightYellow.style.background = ('yellow');
+    trafLightRed.style.background = ('#0000004d');
+    trafLightGreen.style.background = ('#0000004d');
 
+    // Listener remove
+    trafLightRed.removeEventListener('click', makeYellow);
+    trafLightYellow.removeEventListener('click', makeYellow);
+    trafLightGreen.removeEventListener('click', makeYellow);
 
+    // Listener set
+    trafLightRed.addEventListener('click', makeGreen);
+    trafLightYellow.addEventListener('click', makeGreen);
+    trafLightGreen.addEventListener('click', makeGreen);
+}
 
+trafLightGreen.addEventListener('click', makeGreen);
+function makeGreen() {
+    trafLightGreen.style.background = ('green');
+    trafLightRed.style.background = ('#0000004d');
+    trafLightYellow.style.background = ('#0000004d');
 
+    // Listener remove
+    trafLightRed.removeEventListener('click', makeGreen);
+    trafLightYellow.removeEventListener('click', makeGreen);
+    trafLightGreen.removeEventListener('click', makeGreen);
+
+    // Listener set
+
+    trafLightYellow.addEventListener('click', makeRed);
+    trafLightRed.addEventListener('click', makeRed);
+    trafLightGreen.addEventListener('click', makeRed);
+}
 
 
 
