@@ -1,9 +1,8 @@
 const userTextField = document.querySelector('#userTextField');
 
-userTextField.addEventListener('click', function(event) {
+userTextField.addEventListener('click', (event) => {
     event.preventDefault();
-    const userText = prompt('Измените текст ссылки');
-    userTextField.textContent = userText;
+    userTextField.textContent = prompt('Измените текст ссылки');
 })
 
 

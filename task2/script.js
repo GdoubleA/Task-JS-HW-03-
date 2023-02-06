@@ -1,7 +1,7 @@
 const consoleLog = document.querySelector('#consoleLog');
 
 consoleLog.addEventListener('click', () => {
-   let consoleLog = console.log('Служит для вывода информации в консоль');
+console.log('Служит для вывода информации в консоль');
 })
 
 const alert1 = document.querySelector('#alert1');

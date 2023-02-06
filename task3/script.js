@@ -45,7 +45,7 @@ function makeRed() {
     trafLightGreen.addEventListener('click', makeYellow);   
 }
 
-trafLightYellow.addEventListener('click', makeYellow);
+trafLightYellow.addEventListener('click', makeRed);
 function makeYellow() {
    
     trafLightYellow.style.background = ('yellow');
@@ -63,7 +63,7 @@ function makeYellow() {
     trafLightGreen.addEventListener('click', makeGreen);
 }
 
-trafLightGreen.addEventListener('click', makeGreen);
+trafLightGreen.addEventListener('click', makeRed);
 function makeGreen() {
     trafLightGreen.style.background = ('green');
     trafLightRed.style.background = ('#0000004d');
