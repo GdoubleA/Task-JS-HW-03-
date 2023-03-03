@@ -141,6 +141,7 @@ body {
   border: solid;
   border-top-width: 10px;
   margin: 9px;
+  cursor: pointer;
 }
 
 .stolb2 {
@@ -166,6 +167,7 @@ body {
   border-radius: 50%;
   border: solid;
   border-top-width: 10px;
+  cursor: pointer;
 }
 
 .odin {

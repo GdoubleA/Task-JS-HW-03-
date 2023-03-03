@@ -21,6 +21,7 @@ body {
 
 p {
   padding: 10px;
+  cursor: pointer;
 }
 
 code {
